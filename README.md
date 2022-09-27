@@ -1,19 +1,18 @@
 # Korean FastSpeech 2 - Pytorch Implementation
 
-# Install Dependencies
-1.
-python=3.7, [pytorch](https://pytorch.org/)=1.6, [ffmpeg](https://ffmpeg.org/)와 [g2pk](https://github.com/Kyubyong/g2pK)를 설치합니다.
+### Install Dependencies
+1. Install python=3.7, [pytorch](https://pytorch.org/)=1.6, [ffmpeg](https://ffmpeg.org/), [g2pk](https://github.com/Kyubyong/g2pK)
 ```
 # ffmpeg install
 sudo apt-get install ffmpeg
 pip install g2pk
 ```
-2.
+2. Install requirements
 ```
 pip install -r requirements.txt
 ```
 
-3.
+3. preprocess
 ```
 # Preprocessing
 
@@ -27,14 +26,10 @@ pip install -r requirements.txt
 
 Down KSS datasets and down Montreal Forced Aligner under links To train fastspeech2
 
-**(3) **
-```
 python preprocess.py
 ```
+
+4. inference Synthesis
 ```
-4. 
-# Synthesis
-inference Sysnthesis 
-```
-python synthesis.py --step 500000
+python synthesis.py
 ```
